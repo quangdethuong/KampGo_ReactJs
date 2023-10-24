@@ -14,7 +14,7 @@ import './assets/fonts/linearicons-v1.0.0/icon-font.min.css'
 import './assets/css/animsition.min.css'
 import './assets/css/slick.css'
 import './assets/css/animate.css'
-
+import './assets/css/hamburgers.min.css'
 
 
 
