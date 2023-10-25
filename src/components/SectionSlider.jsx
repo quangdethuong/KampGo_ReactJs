@@ -2,9 +2,9 @@ import React, { useEffect } from 'react'
 import $ from 'jquery'
 import "slick-carousel/slick/slick.js";
 
-import kampgoImage from '../assets/images/slider-kampgo.jpg';
-import kampgoImage2 from '../assets/images/slide-06.jpg'
-import kampgoImage3 from '../assets/images/slide-07.jpg'
+import kampgoImage from '../assets/images/supkampgo.jpg';
+import kampgoImage2 from '../assets/images/camp-dalat-slide.jpg'
+import kampgoImage3 from '../assets/images/camp-HonSon-Slide.jpg'
 
 function SectionSlider() {
 
@@ -101,9 +101,9 @@ function SectionSlider() {
             $(this).find('.slick2').slick({
                 slidesToShow: 4,
                 slidesToScroll: 4,
-                infinite: false,
-                autoplay: false,
-                autoplaySpeed: 6000,
+                infinite: true,
+                autoplay: true,
+                autoplaySpeed: 4500,
                 arrows: true,
                 appendArrows: $(this),
                 prevArrow: '<button class="arrow-slick2 prev-slick2"><i class="fa fa-angle-left" aria-hidden="true"></i></button>',
@@ -184,7 +184,7 @@ function SectionSlider() {
                 <div className="slick1">
 
                     <div className="item-slick1 bg-overlay1" style={{ backgroundImage: `url(${kampgoImage})` }}
-                        data-thumb="images/thumb-01.jpg" data-caption="Women’s Wear">
+                    >
                         <div className="container h-full">
                             <div className="flex-col-c-m h-full p-t-100 p-b-60 respon5">
                                 <div className="layer-slick1 animated visible-false" data-appear="fadeInDown" data-delay={0}>
@@ -198,50 +198,50 @@ function SectionSlider() {
                                     </h2>
                                 </div>
                                 <div className="layer-slick1 animated visible-false" data-appear="zoomIn" data-delay={1600}>
-                                    <a href="product.html" className="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn2 p-lr-15 trans-04">
+                                    <a href="/page404" className="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn2 p-lr-15 trans-04">
                                         Book Now
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="item-slick1 bg-overlay1" style={{ backgroundImage: `url(${kampgoImage2})` }} data-thumb="images/thumb-02.jpg" data-caption="Men’s Wear">
+                    <div className="item-slick1 bg-overlay1" style={{ backgroundImage: `url(${kampgoImage2})` }} >
                         <div className="container h-full">
                             <div className="flex-col-c-m h-full p-t-100 p-b-60 respon5">
                                 <div className="layer-slick1 animated visible-false" data-appear="rollIn" data-delay={0}>
                                     <span className="ltext-202 txt-center cl0 respon2">
-                                        Men New-Season
+                                        Cắm trại rừng thông Đà Lạt
                                     </span>
                                 </div>
                                 <div className="layer-slick1 animated visible-false" data-appear="lightSpeedIn" data-delay={800}>
                                     <h2 className="ltext-104 txt-center cl0 p-t-22 p-b-40 respon1">
-                                        Jackets &amp; Coats
+                                        Ấm áp, thoải mái, an toàn
                                     </h2>
                                 </div>
                                 <div className="layer-slick1 animated visible-false" data-appear="slideInUp" data-delay={1600}>
-                                    <a href="product.html" className="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn2 p-lr-15 trans-04">
-                                        Shop Now
+                                    <a href="/page404" className="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn2 p-lr-15 trans-04">
+                                        Book now
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="item-slick1 bg-overlay1" style={{ backgroundImage: `url(${kampgoImage3})` }} data-thumb="images/thumb-03.jpg" data-caption="Men’s Wear">
+                    <div className="item-slick1 bg-overlay1" style={{ backgroundImage: `url(${kampgoImage3})` }} >
                         <div className="container h-full">
                             <div className="flex-col-c-m h-full p-t-100 p-b-60 respon5">
                                 <div className="layer-slick1 animated visible-false" data-appear="rotateInDownLeft" data-delay={0}>
                                     <span className="ltext-202 txt-center cl0 respon2">
-                                        Men Collection 2018
+                                        Khu cắm trại biển Hòn Sơn
                                     </span>
                                 </div>
                                 <div className="layer-slick1 animated visible-false" data-appear="rotateInUpRight" data-delay={800}>
                                     <h2 className="ltext-104 txt-center cl0 p-t-22 p-b-40 respon1">
-                                        NEW SEASON
+                                        NEW COMBO
                                     </h2>
                                 </div>
                                 <div className="layer-slick1 animated visible-false" data-appear="rotateIn" data-delay={1600}>
-                                    <a href="product.html" className="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn2 p-lr-15 trans-04">
-                                        Shop Now
+                                    <a href="/page404" className="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn2 p-lr-15 trans-04">
+                                        Book Now
                                     </a>
                                 </div>
                             </div>

@@ -6,6 +6,10 @@ import Header from './components/Header';
 import { useEffect } from 'react';
 import 'animsition';
 import $ from 'jquery'
+import DevelopmentNotification from './pages/404/DevelopePage';
+import Footer from './components/Footer';
+import CartOrder from './pages/Cart/CartOrder';
+import ProductDetail from './pages/ProductDetail/ProductDetail';
 
 
 
@@ -224,6 +228,9 @@ function App() {
       transition: function (url) { window.location.href = url; }
     });
 
+
+    
+
   }, [])
   return (
     <BrowserRouter>
@@ -236,8 +243,20 @@ function App() {
 
           <Route exact path='/shop' component={Shop} />
 
+          <Route exact path='/cart' component={CartOrder} />
+
+          <Route exact path='/product-detail' component={ProductDetail} />
+
+
+
+
+
+          <Route path="*" component={DevelopmentNotification} />
+
 
         </Switch>
+        <Footer />
+
       </div>
     </BrowserRouter>
 

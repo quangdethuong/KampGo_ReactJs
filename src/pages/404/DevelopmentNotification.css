@@ -1,0 +1,17 @@
+.development-notification {
+    background-color: #4CAF50;
+    /* Màu xanh lá cây */
+    color: #fff;
+    /* Màu chữ trắng */
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    margin-top: 80px;
+}
+
+.development-notification p {
+    font-size: 18px;
+    margin: 0;
+}

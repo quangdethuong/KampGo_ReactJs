@@ -250,7 +250,7 @@ button:focus {
 }
 
 .p-t-65 {
-    padding-top: 65px;
+    padding-top: 100px;
 }
 
 .p-t-75 {
@@ -1101,6 +1101,12 @@ button:focus {
 
 .flex-r-m {
     justify-content: flex-end;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.flex-r-m-detail {
+    justify-content: flex-start;
     -ms-align-items: center;
     align-items: center;
 }
