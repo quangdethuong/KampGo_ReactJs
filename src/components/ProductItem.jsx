@@ -15,7 +15,7 @@ function ProductItem() {
                                 TRẠM SẠC DỰ PHÒNG, DI ĐỘNG ECOFLOW RIVER 2 PRO 768WH
                             </a>
                             <span className="stext-105 cl3">
-                                $900
+                                20.000.000VNĐ
                             </span>
                         </div>
 
@@ -34,7 +34,7 @@ function ProductItem() {
                                 THẢM DÃ NGOẠI VẢI DỆT NATUREHIKE NH21FCD02
                             </a>
                             <span className="stext-105 cl3">
-                                $50
+                                1.000.000VNĐ
                             </span>
                         </div>
 
@@ -53,7 +53,7 @@ function ProductItem() {
                                 Máy bơm nước có vòi sen 2in1 NatureHike NH20SJ018
                             </a>
                             <span className="stext-105 cl3">
-                                $200
+                                4.050.000VNĐ
                             </span>
                         </div>
 
@@ -72,7 +72,7 @@ function ProductItem() {
                                 LỀU CẮM TRẠI, DÃ NGOẠI 4 NGƯỜI MADFOX TREKKER 4 2022
                             </a>
                             <span className="stext-105 cl3">
-                                $150
+                                2.500.000VNĐ
                             </span>
                         </div>
 
@@ -91,7 +91,7 @@ function ProductItem() {
                                 ĐÈN PIN CẦM TAY FENIX PD35R
                             </a>
                             <span className="stext-105 cl3">
-                                $100
+                                2.000.000VNĐ
                             </span>
                         </div>
 

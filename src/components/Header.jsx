@@ -19,19 +19,19 @@ export default function Header() {
                     <div className="top-bar">
                         <div className="content-topbar flex-sb-m h-full container">
                             <div className="left-top-bar">
-                                Free shipping for standard order over $100
+
                             </div>
                             <div className="right-top-bar flex-w h-full">
-                                <a href="#" className="flex-c-m trans-04 p-lr-25">
-                                    Help &amp; FAQs
+                                <a href="/" className="flex-c-m trans-04 p-lr-25">
+                                    Trợ giúp
                                 </a>
-                                <a href="#" className="flex-c-m trans-04 p-lr-25">
-                                    My Account
+                                <a href="/page404" className="flex-c-m trans-04 p-lr-25">
+                                    Tài khoản của tôi
                                 </a>
-                                <a href="#" className="flex-c-m trans-04 p-lr-25">
+                                <a href="/" className="flex-c-m trans-04 p-lr-25">
                                     EN
                                 </a>
-                                <a href="#" className="flex-c-m trans-04 p-lr-25">
+                                <a href="/" className="flex-c-m trans-04 p-lr-25">
                                     USD
                                 </a>
                             </div>
@@ -46,16 +46,16 @@ export default function Header() {
                                 <ul className="main-menu">
                                     <li>
 
-                                        <NavLink activeStyle={{ color: ' #6c7ae0' }} className="nav-link animsition-link" to="/home">Home</NavLink>
+                                        <NavLink activeStyle={{ color: ' #6c7ae0' }} className="nav-link animsition-link" to="/home">Trang chủ</NavLink>
                                         {/* <a href="/home">Home</a> */}
                                     </li>
                                     <li>
                                         {/* <a href="/shop">Shop</a> */}
 
-                                        <NavLink activeStyle={{ color: ' #6c7ae0' }} className="nav-link" to="/shop">Shop</NavLink>
+                                        <NavLink activeStyle={{ color: ' #6c7ae0' }} className="nav-link" to="/shop">Sản phẩm</NavLink>
                                     </li>
                                     <li className="">
-                                        <NavLink activeStyle={{ color: ' #6c7ae0' }} className="nav-link" to="/cart">Cart Order</NavLink>
+                                        <NavLink activeStyle={{ color: ' #6c7ae0' }} className="nav-link" to="/cart">Giỏ hàng</NavLink>
 
                                     </li>
 
@@ -102,21 +102,21 @@ export default function Header() {
                     <ul className="topbar-mobile">
                         <li>
                             <div className="left-top-bar">
-                                Free shipping for standard order over $100
+
                             </div>
                         </li>
                         <li>
                             <div className="right-top-bar flex-w h-full">
-                                <a href="a" className="flex-c-m p-lr-10 trans-04">
-                                    Help &amp; FAQs
+                                <a href="/" className="flex-c-m trans-04 p-lr-25">
+                                    Trợ giúp
                                 </a>
-                                <a href="a" className="flex-c-m p-lr-10 trans-04">
-                                    My Account
+                                <a href="/page404" className="flex-c-m trans-04 p-lr-25">
+                                    Tài khoản của tôi
                                 </a>
-                                <a href="a" className="flex-c-m p-lr-10 trans-04">
+                                <a href="/" className="flex-c-m trans-04 p-lr-25">
                                     EN
                                 </a>
-                                <a href="a" className="flex-c-m p-lr-10 trans-04">
+                                <a href="/" className="flex-c-m trans-04 p-lr-25">
                                     USD
                                 </a>
                             </div>
@@ -143,7 +143,7 @@ export default function Header() {
                 <div className="modal-search-header flex-c-m trans-04 js-hide-modal-search">
                     <div className="container-search-header">
                         <button className="flex-c-m btn-hide-modal-search trans-04 js-hide-modal-search">
-                            <img src="images/icons/icon-close2.png" alt="CLOSE" />
+                            <img src={require('../assets/images/icons/icon-close2.png')} alt="CLOSE" />
                         </button>
                         <form className="wrap-search-header flex-w p-l-15">
                             <button className="flex-c-m trans-04">
@@ -168,22 +168,22 @@ export default function Header() {
                         <ul className="sidebar-link w-full">
                             <li className="p-b-13">
                                 <a href="index-2.html" className="stext-102 cl2 hov-cl1 trans-04">
-                                    Home
+                                    Trang chủ
                                 </a>
                             </li>
                             <li className="p-b-13">
                                 <a href="a" className="stext-102 cl2 hov-cl1 trans-04">
-                                    My Wishlist
+                                    Mục yêu thích
                                 </a>
                             </li>
                             <li className="p-b-13">
                                 <a href="a" className="stext-102 cl2 hov-cl1 trans-04">
-                                    My Account
+                                    Tài Khoản của tôi
                                 </a>
                             </li>
                             <li className="p-b-13">
                                 <a href="a" className="stext-102 cl2 hov-cl1 trans-04">
-                                    Track Oder
+                                    Theo dõi đơn hàng
                                 </a>
                             </li>
                             <li className="p-b-13">

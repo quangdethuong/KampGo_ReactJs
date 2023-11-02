@@ -6,7 +6,7 @@ function SliderProducts() {
             <div className="container">
                 <div className="p-b-45">
                     <h3 className="ltext-106 cl5 txt-center">
-                        Hot Products
+                        Sản phẩm nổi bật
                     </h3>
                 </div>
                 <div className="wrap-slick2">
@@ -23,7 +23,7 @@ function SliderProducts() {
                                             Máy bơm nước có vòi sen 2in1 NatureHike NH20SJ018
                                         </a>
                                         <span className="stext-105 cl3">
-                                            $200
+                                            4.050.000VNĐ
                                         </span>
                                     </div>
 
@@ -42,7 +42,7 @@ function SliderProducts() {
                                             LỀU CẮM TRẠI, DÃ NGOẠI 4 NGƯỜI MADFOX TREKKER 4 2022
                                         </a>
                                         <span className="stext-105 cl3">
-                                            $150
+                                            2.500.000VNĐ
                                         </span>
                                     </div>
 
@@ -61,7 +61,7 @@ function SliderProducts() {
                                             ĐÈN PIN CẦM TAY FENIX PD35R
                                         </a>
                                         <span className="stext-105 cl3">
-                                            $100
+                                            2.000.000VNĐ
                                         </span>
                                     </div>
 
@@ -80,7 +80,7 @@ function SliderProducts() {
                                             TRẠM SẠC DỰ PHÒNG, DI ĐỘNG ECOFLOW RIVER 2 PRO 768WH
                                         </a>
                                         <span className="stext-105 cl3">
-                                            $900
+                                            20.000.000VNĐ
                                         </span>
                                     </div>
 
@@ -99,7 +99,7 @@ function SliderProducts() {
                                             THẢM DÃ NGOẠI VẢI DỆT NATUREHIKE NH21FCD02
                                         </a>
                                         <span className="stext-105 cl3">
-                                            $50
+                                            1.000.000VNĐ
                                         </span>
                                     </div>
 
@@ -118,7 +118,7 @@ function SliderProducts() {
                                             THÙNG NHỰA ĐA NĂNG CÓ NẮP THOR - THƯƠNG HIỆU TRUST
                                         </a>
                                         <span className="stext-105 cl3">
-                                            $50
+                                            1.000.000VNĐ
                                         </span>
                                     </div>
 

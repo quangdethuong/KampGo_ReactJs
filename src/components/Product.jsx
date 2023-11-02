@@ -13,19 +13,19 @@ function Product() {
                 <div className="container">
                     <div className="p-b-10">
                         <h3 className="ltext-103 cl5">
-                            Product Overview
+                            Các sản phẩm của chúng tôi
                         </h3>
                     </div>
                     <div className="flex-w flex-sb-m p-b-52">
                         <div className="flex-w flex-l-m filter-tope-group m-tb-10">
                             <button className="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5 how-active1" data-filter="*">
-                                All Products
+                                Tất cả
                             </button>
                             <button className="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".women">
-                                Sup Tour
+                                Dịch vụ chèo sup
                             </button>
                             <button className="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".men">
-                                Camping Products
+                                Sản phẩm cắm trại
                             </button>
 
                         </div>

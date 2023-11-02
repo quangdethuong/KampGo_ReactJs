@@ -12,15 +12,15 @@ function Banner() {
                                 <a href="/page404" className="block1-txt ab-t-l s-full flex-col-l-sb p-lr-38 p-tb-34 trans-03 respon3">
                                     <div className="block1-txt-child1 flex-col-l">
                                         <span className="block1-name ltext-102 trans-04 p-b-8">
-                                            Sup Tour
+                                            Chèo Sup
                                         </span>
                                         <span className="block1-info stext-102 trans-04">
-                                            New Tour
+                                            Trải nghiệm mới
                                         </span>
                                     </div>
                                     <div className="block1-txt-child2 p-b-4 trans-05">
                                         <div className="block1-link stext-101 cl0 trans-09">
-                                            Book Now
+                                            Xem ngay
                                         </div>
                                     </div>
                                 </a>
@@ -32,15 +32,15 @@ function Banner() {
                                 <a href="/shop" className="block1-txt ab-t-l s-full flex-col-l-sb p-lr-38 p-tb-34 trans-03 respon3">
                                     <div className="block1-txt-child1 flex-col-l">
                                         <span className="block1-name ltext-102 trans-04 p-b-8">
-                                            Camping <br /> product
+                                            Sản phẩm <br /> cắm trại
                                         </span>
                                         <span className="block1-info stext-102 trans-04">
-                                            Sales
+                                            Ưu đãi
                                         </span>
                                     </div>
                                     <div className="block1-txt-child2 p-b-4 trans-05">
                                         <div className="block1-link stext-101 cl0 trans-09">
-                                            Shop Now
+                                            Xem ngay
                                         </div>
                                     </div>
                                 </a>
