@@ -5,6 +5,7 @@ import Banner from '../../components/Banner';
 import Product from '../../components/Product';
 
 import SliderProducts from '../../components/SliderProducts';
+import TourSlider from '../../components/TourSlider';
 
 
 function Home() {
@@ -12,15 +13,14 @@ function Home() {
 
 
     return (
-        <div className=''>
+        <>
             <SectionSlider />
             <Banner />
 
             <SliderProducts />
+            <TourSlider />
             <Product />
-
-
-        </div>
+        </>
     )
 }
 

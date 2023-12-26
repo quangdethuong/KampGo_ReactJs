@@ -26,16 +26,14 @@ function Footer() {
                                 </a>
                             </li>
                             <li className="p-b-10">
-                                <a href="/" className="stext-107 cl7 hov-cl1 trans-04"> Returns </a>
+                                <a href="/page404" className="stext-107 cl7 hov-cl1 trans-04"> Trả hàng </a>
                             </li>
                             <li className="p-b-10">
                                 <a href="/" className="stext-107 cl7 hov-cl1 trans-04">
                                     Giao hàng tận nơi
                                 </a>
                             </li>
-                            <li className="p-b-10">
-                                <a href="/" className="stext-107 cl7 hov-cl1 trans-04"> FAQs </a>
-                            </li>
+
                         </ul>
                     </div>
                     <div className="col-sm-6 col-lg-3 p-b-50">

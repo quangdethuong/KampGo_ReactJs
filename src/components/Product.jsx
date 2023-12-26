@@ -1,8 +1,32 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 
-import 'isotope-layout/dist/isotope.pkgd.min.js'
-import ProductItem from './ProductItem'
+import { useEffect } from 'react';
+
+import $ from 'jquery'
+import ProductList from './ProductList';
+
+
+
+
 function Product() {
+
+    useEffect(() => {
+        var isotopeButton = $('.filter-tope-group button');
+
+        $(isotopeButton).each(function () {
+            $(this).on('click', function () {
+                for (var i = 0; i < isotopeButton.length; i++) {
+                    $(isotopeButton[i]).removeClass('how-active1');
+                }
+
+                $(this).addClass('how-active1');
+            });
+        });
+
+        return () => {
+
+        }
+    }, [])
 
 
     return (
@@ -22,7 +46,7 @@ function Product() {
                                 Tất cả
                             </button>
                             <button className="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".women">
-                                Dịch vụ chèo sup
+                                Dịch vụ cắm trại
                             </button>
                             <button className="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".men">
                                 Sản phẩm cắm trại
@@ -32,11 +56,11 @@ function Product() {
                         <div className="flex-w flex-c-m m-tb-10">
                             <div className="flex-c-m stext-106 cl6 size-104 bor4 pointer hov-btn3 trans-04 m-r-8 m-tb-4 js-show-filter">
                                 <i className="icon-filter cl2 m-r-6 fs-15 trans-04 zmdi zmdi-filter-list" />
-                                <i className="icon-close-filter cl2 m-r-6 fs-15 trans-04 zmdi zmdi-close dis-none" /> Filter
+                                <i className="icon-close-filter cl2 m-r-6 fs-15 trans-04 zmdi zmdi-close dis-none" /> Lọc
                             </div>
                             <div className="flex-c-m stext-106 cl6 size-105 bor4 pointer hov-btn3 trans-04 m-tb-4 js-show-search">
                                 <i className="icon-search cl2 m-r-6 fs-15 trans-04 zmdi zmdi-search" />
-                                <i className="icon-close-search cl2 m-r-6 fs-15 trans-04 zmdi zmdi-close dis-none" /> Search
+                                <i className="icon-close-search cl2 m-r-6 fs-15 trans-04 zmdi zmdi-close dis-none" /> Tìm kiếm
                             </div>
                         </div>
                         <div className="dis-none panel-search w-full p-t-10 p-b-15">
@@ -205,9 +229,10 @@ function Product() {
                     </div>
 
                     <div className="row isotope-grid">
-                        <ProductItem />
+                        <ProductList/>
 
                     </div>
+               
 
                     <div className="flex-c-m flex-w w-full p-t-38">
                         <a href="a" className="flex-c-m how-pagination1 trans-04 m-all-7 active-pagination1">

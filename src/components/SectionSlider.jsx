@@ -6,9 +6,9 @@ import kampgoImage from '../assets/images/supkampgo.jpg';
 import kampgoImage2 from '../assets/images/camp-dalat-slide.jpg'
 import kampgoImage3 from '../assets/images/camp-HonSon-Slide.jpg'
 
-function SectionSlider() {
 
 
+const SectionSlider = () => {
     useEffect(() => {
 
 
@@ -198,7 +198,7 @@ function SectionSlider() {
                                     </h2>
                                 </div>
                                 <div className="layer-slick1 animated visible-false" data-appear="zoomIn" data-delay={1600}>
-                                    <a href="/page404" className="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn2 p-lr-15 trans-04">
+                                    <a href="/4" className="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn2 p-lr-15 trans-04">
                                         Liên hệ ngay
                                     </a>
                                 </div>

@@ -3,24 +3,22 @@ import $ from 'jquery'
 import "slick-carousel/slick/slick.js";
 import SliderProducts from '../../components/SliderProducts';
 import swal from 'sweetalert/dist/sweetalert.min.js'
+import TourItemImg from './TourItemImg';
 import { useState } from 'react';
-import ProductDetail_Img from './ProductItemImg';
-import ProductItemImg from './ProductItemImg';
+import TourSlider from '../../components/TourSlider';
 
-
-
-const ProductDetail = (props) => {
+const TourDetail = (props) => {
     const [product, setProduct] = useState();
 
-    const arrayProducts = [
-        { "maSP": 1, "namePro": "TRẠM SẠC DỰ PHÒNG, DI ĐỘNG ECOFLOW RIVER 2 PRO 768WH", "description": "RIVER 2 Pro Với bốn tùy chọn sạc linh hoạt, chúng tôi đảm bảo rằng bạn có thể sạc RIVER 2 Pro gần như mọi lúc mọi nơi. Sạc bằng ổ cắm AC để sạc cực nhanh trong 70 phút, sạc khi đang di chuyển trên ô tô và cùng với khả năng sạc nhanh bằng tấm năng lượng mặt trời. RIVER 2 Pro có tùy chọn sạc hoàn toàn mới, USB-C. Cắm và sạc thuận tiện ở bất cứ đâu có ổ cắm.", "price": 20000000, "pic": "https://quancamp.vn/thumb2/580x620/1/upload/sanpham/river-2-pro-e1692761846453-4762.png", "pic2": "https://quancamp.vn/thumb2/580x620/1/upload/sanpham/river-620%E6%AC%A7%E8%A7%84%E5%8F%B3%E4%BE%A7-1024x576-6329.png", "pic3": "https://quancamp.vn/thumb2/580x620/1/upload/hinhthem/river6201024x576-7561.png" },
-        { "maSP": 2, "namePro": "Máy bơm nước có vòi sen 2in1 NatureHike NH20SJ018", "description": "assssssss", "price": 4050000, "pic": "https://quancamp.vn/thumb2/580x620/1/upload/sanpham/quancamp-bom-naturehike-nh20sj018-4427.jpg", "pic2": "https://quancamp.vn/thumb2/580x620/1/upload/sanpham/quancamp-naturehike-nh20sj018-2-7852.jpg", "pic3": "https://quancamp.vn/thumb2/580x620/1/upload/hinhthem/quancampnaturehike-nh20sj0184-1519.jpg" },
-        { "maSP": 3, "namePro": "THẢM DÃ NGOẠI VẢI DỆT NATUREHIKE NH21FCD02", "description": "Nổi bật với thiết kế cửa có thể mở thành mái hiên tiện lợi - Lều 4 người Madfox Trekker 4 2022 được tối ưu diện tích sử dụng với 2 mái hiên có thể được tạo ra bởi 2 cửa đối diện nhau. Là mẫu lều dã ngoại, cắm trại dành thích hợp cho những chuyến đi cùng gia đình, bạn bè. Các đường may được xử lý ép seam chống thấm nước", "price": 1000000, "pic": "https://quancamp.vn/upload/images/quancamp-NatureHike-NH21FCD02-love.jpg", "pic2": "https://quancamp.vn/upload/images/quancamp-NatureHike-NH21FCD02-free.jpg", "pic3": "https://quancamp.vn/upload/images/quancamp-NatureHike-NH21FCD02-Jungle.jpg" },
-        { "maSP": 4, "namePro": "LỀU CẮM TRẠI, DÃ NGOẠI 4 NGƯỜI MADFOX TREKKER 4 2022", "description": "Lớp trong được thiết kế đa phần là lưới mắt nhỏ giúp ngăn côn trùng, đồng thời đảm bảo thông thoáng Thiết kế 2 cửa đối diện nhau giúp người trong lều dễ dàng di chuyển ra ngoài. 2 cửa có thể dựng lên thành 2 mái hiên, có thể sử dụng cho sinh hoạt, ăn uống nhóm nhỏ. (Sào chống mái hiên KHÔNG được đi kèm) Lớp lều bên trong thiết kế full clip hook (không cần xỏ khung trước khi dựng)Bộ cọc lều cũng bằng nhôm cao cấp, chắc chắn", "price": 2500000, "pic": "https://quancamp.vn/upload/images/quancamp-madfox-trekker4-xanhduong-3.png", "pic2": "https://quancamp.vn/upload/images/quancamp-madfox-trekker4-xanhduong-1.png", "pic3": "ecoflow3.jpg" },
-        { "maSP": 5, "namePro": "ĐÈN PIN CẦM TAY FENIX PD35R", "description": "Fenix PD35R có công suất 1700 lumens, tầm chiếu xa tối đa 353 mét. Hãng sử dụng LED Luminus SFT40 tuổi thọ lên đến 50.000 giờ, cho ra ánh sáng trắng chân thực và mịn, dịu mắt. Đèn pin Fenix PD35R có 5 chế độ sáng, và 1 mức Trobe, toàn bộ được điều khiển bằng công tắc kép ở đuôi.", "price": 2000000, "pic": "https://quancamp.vn/upload/images/PD35R_E_-01.jpeg", "pic2": "https://quancamp.vn/upload/images/PD35R_E_-04.jpeg", "pic3": "https://quancamp.vn/upload/images/PD35R_E_-07.jpeg" }
+    const arrayTours = [
+        { "maTour": 1, "nameTour": "Kỳ Quan San", "description": "Ky Quan San là một trong tứ đỉnh của Việt Nam, với độ cao là 3046m. Chạm đỉnh Ky Quan San là thử thách mà bất cứ nhà leo núi chuyên nghiệp nào cũng phải đạt được ít nhất một lần trong đời. ", "price": 5700000, "pic": "https://toongadventure.com/media_path/2022/20221130/Ayd6TrB9NhRVBkJevuGMznlEVQUWWwbrAlonhGWU.jpg", "pic2": "https://toongadventure.com/media_path/2022/20221130/6nzrRzKqK1k4cUdpqhUGFurxgmZgIfOTX3HnZlyv.jpg", "pic3": "https://toongadventure.com/media_path/2022/20221130/P81kfuRN4jaUNKWrOMbOlfD91ISCqLZFX1W2WVlu.jpg" },
+        { "maTour": 2, "nameTour": "Bù Gia Mập", "description": "Bù Gia Mập - Cung đường khám phá cánh rừng xanh giữa cao nguyên đất đỏ, cách Sài Gòn chỉ hơn 200km.", "price": 2300000, "pic": "https://toongadventure.com/media_path/2023/20230628/cbbGVFcSnOZUN93zx1izI2MAsMXecQ4NVFxaQGvg.jpg", "pic2": "https://toongadventure.com/media_path/2023/20230628/kKAnDvcmVGAtjuAkJGXKBA4Hk9OOXK0XLXeCAPsz.jpg" },
+        { "maTour": 3, "nameTour": "Rừng thông Đà Lạt", "description": "Hãy cùng khám phá thiên nhiên tươi đẹp của cao nguyên đá Đà Lạt với tour cắm trại 1 đêm ngắm bình minh trên đỉnh Langbiang. Chúng ta sẽ chinh phục đỉnh núi cao 2.169m", "price": 2700000, "pic": "https://th.bing.com/th/id/OIP.Lq4bkCXc3NH9sZTO4f7XeQHaFj?pid=ImgDet&rs=1", "pic2": "https://dalatcamping.net/wp-content/uploads/2022/11/rung-thong-da-lat.jpg", "pic3": "" },
+        { "maTour": 4, "nameTour": "Chèo Sup ở sông Hậu", "description": "Môn thể thao chèo thuyền kayak trên dòng sông Hậu giữa lòng thành phố Cần Thơ tràn ngập sắc xanh của cây cối hai bên bờ. Hãy cùng hòa mình vào thiên nhiên, tận hưởng làn nước mát lành và ngắm cảnh đồng bằng sông nước miền Tây hiền hòa, thanh bình.", "price": 400000, "pic": "https://scontent.fvca1-2.fna.fbcdn.net/v/t39.30808-6/399644889_324073690259101_4660074642253353543_n.jpg?stp=cp6_dst-jpg&_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeE8FLt-sb4e2NEim9-I3VIikIbscplbvSaQhuxymVu9Jpr7fksex_4rfNzzRqvjNdpbKodtqyZjtkCadOzi6_B9&_nc_ohc=9OCNLV6twY4AX8vHCOD&_nc_ht=scontent.fvca1-2.fna&oh=00_AfCn1IctasqC9-qEUnpp8pbj6Xy4CusD02zUL95AaEY8Ig&oe=6551F3DC" }
     ];
 
     const productsLookup = {};
+
 
 
 
@@ -37,12 +35,10 @@ const ProductDetail = (props) => {
         // const selected = productsLookup[props.match.params.maSP];
         // console.log(selected);
         // setProduct(data)
-
-        console.log(arrayProducts.find(vl => vl.maSP == props.match.params.maSP));
-        setProduct(arrayProducts.find(vl => vl.maSP == props.match.params.maSP))
         /*==================================================================
         [ Slick1 ]*/
-
+        console.log(arrayTours.find(vl => vl.maTour == props.match.params.maTour));
+        setProduct(arrayTours.find(vl => vl.maTour == props.match.params.maTour))
         // let stringPic = require('../../assets/images/')
         // console.log(stringPic);
         $('.wrap-slick1').each(function () {
@@ -245,7 +241,7 @@ const ProductDetail = (props) => {
         return () => {
 
         }
-    }, [props.match.params.maSP])
+    }, [])
     console.log(product, "state");
     return (
 
@@ -259,7 +255,7 @@ const ProductDetail = (props) => {
                                     <div className="wrap-slick3-dots" />
                                     <div className="wrap-slick3-arrows flex-sb-m flex-w" />
                                     <div className="slick3 gallery-lb">
-                                        <ProductItemImg imgProps={product} />
+                                        <TourItemImg imgProps={product} />
                                         {/* <div className="item-slick3">
                                             <div className="wrap-pic-w pos-relative">
                                                 <img src={product?.pic} alt="IMG-PRODUCT" />
@@ -285,7 +281,7 @@ const ProductDetail = (props) => {
                             <div className="p-r-50 p-t-5 p-lr-0-lg">
                                 <h4 className="mtext-105 cl2 js-name-detail p-b-14">
                                     {/* TRẠM SẠC DỰ PHÒNG, DI ĐỘNG ECOFLOW RIVER 2 PRO 768WH */}
-                                    {product?.namePro}
+                                    {product?.nameTour}
                                 </h4>
                                 <span className="mtext-106 cl2">
                                     {product?.price.toLocaleString()}VNĐ
@@ -446,11 +442,11 @@ const ProductDetail = (props) => {
 
             </section>
 
-            <SliderProducts />
+            <TourSlider />
         </>
 
 
     )
 }
 
-export default ProductDetail
+export default TourDetail

@@ -19,9 +19,7 @@ import './assets/css/hamburgers.min.css'
 
 
 ReactDOM.render(
-  <Provider store={store}>
-    <App />
-  </Provider>
+  <App />
   ,
 
   document.getElementById('root')

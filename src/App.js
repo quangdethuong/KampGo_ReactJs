@@ -10,13 +10,37 @@ import DevelopmentNotification from './pages/404/DevelopePage';
 import Footer from './components/Footer';
 import CartOrder from './pages/Cart/CartOrder';
 import ProductDetail from './pages/ProductDetail/ProductDetail';
+import TourShop from './pages/TourShop/TourShop';
+import ProductItemImg from './pages/ProductDetail/ProductItemImg';
+import TourDetail from './pages/TourDetail/TourDetail';
+
+
+
 
 
 
 function App() {
 
   useEffect(() => {
-
+    $('.animsition').animsition({
+      inClass: 'fade-in',
+      outClass: 'fade-out',
+      inDuration: 1500,
+      outDuration: 800,
+      linkElement: '.animsition-link',
+      loading: true,
+      loadingParentElement: 'html',
+      loadingClass: 'animsition-loading-1',
+      loadingInner: '<div class="loader05"></div>',
+      timeout: false,
+      timeoutCountdown: 5000,
+      onLoadEvent: true,
+      browser: ['animation-duration', '-webkit-animation-duration'],
+      overlay: false,
+      overlayClass: 'animsition-overlay-slide',
+      overlayParentElement: 'html',
+      transition: function (url) { window.location.href = url; }
+    });
 
 
     /*[ Back to top ]
@@ -120,10 +144,6 @@ function App() {
 
 
 
-
-
-
-
     /*==================================================================
     [ Cart ]*/
     $('.js-show-cart').on('click', function () {
@@ -208,25 +228,7 @@ function App() {
     $('.js-hide-modal1').on('click', function () {
       $('.js-modal1').removeClass('show-modal1');
     });
-    $('.animsition').animsition({
-      inClass: 'fade-in',
-      outClass: 'fade-out',
-      inDuration: 1500,
-      outDuration: 800,
-      linkElement: '.animsition-link',
-      loading: true,
-      loadingParentElement: 'html',
-      loadingClass: 'animsition-loading-1',
-      loadingInner: '<div class="loader05"></div>',
-      timeout: false,
-      timeoutCountdown: 5000,
-      onLoadEvent: true,
-      browser: ['animation-duration', '-webkit-animation-duration'],
-      overlay: false,
-      overlayClass: 'animsition-overlay-slide',
-      overlayParentElement: 'html',
-      transition: function (url) { window.location.href = url; }
-    });
+
 
 
 
@@ -242,11 +244,15 @@ function App() {
           <Route exact path='/' component={Home} />
 
           <Route exact path='/shop' component={Shop} />
+          
+          <Route exact path='/tour-shop' component={TourShop} />
+
 
           <Route exact path='/cart' component={CartOrder} />
 
-          <Route exact path='/product-detail' component={ProductDetail} />
+          <Route exact path='/product-detail/:maSP' component={ProductDetail} />
 
+          <Route exact path='/tour-detail/:maTour' component={TourDetail} />
 
 
 

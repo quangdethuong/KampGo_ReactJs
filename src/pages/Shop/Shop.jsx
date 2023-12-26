@@ -3,6 +3,7 @@ import Product from '../../components/Product'
 import './Shop.css'
 import ProductItem from '../../components/ProductItem'
 import Category from '../../components/Category'
+import ProductList from '../../components/ProductList'
 
 function Shop() {
 
@@ -15,7 +16,7 @@ function Shop() {
                     <Category />
 
                     <div className="row isotope-grid">
-                        <ProductItem />
+                        <ProductList />
                     </div>
                     <div className="flex-c-m flex-w w-full p-t-45">
                         <a href="a" className="flex-c-m stext-101 cl5 size-103 bg2 bor1 hov-btn1 p-lr-15 trans-04">

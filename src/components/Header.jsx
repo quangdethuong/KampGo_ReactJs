@@ -54,6 +54,12 @@ export default function Header() {
 
                                         <NavLink activeStyle={{ color: ' #6c7ae0' }} className="nav-link" to="/shop">Sản phẩm</NavLink>
                                     </li>
+
+                                    <li>
+                                        {/* <a href="/shop">Shop</a> */}
+
+                                        <NavLink activeStyle={{ color: ' #6c7ae0' }} className="nav-link" to="/tour-shop">Dịch vụ </NavLink>
+                                    </li>
                                     <li className="">
                                         <NavLink activeStyle={{ color: ' #6c7ae0' }} className="nav-link" to="/cart">Giỏ hàng</NavLink>
 
